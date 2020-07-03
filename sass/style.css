@@ -736,10 +736,6 @@ section.offer::before {
   background: url("../img/arrows/right-arrow-white.png") center no-repeat;
 }
 
-.contacts-section {
-  padding-bottom: 50px;
-}
-
 .contacts-box {
   position: relative;
   display: -ms-grid;
