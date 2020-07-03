@@ -10,12 +10,11 @@
     .nav-menu
         display: grid
         grid-template-columns: repeat(7, 1fr)
-        grid-gap: 10px
         text-align: center
         list-style: none
         height: 44px
         &__item
-            a
+            a   
                 display: inline-block
                 height: 25px
                 line-height: 0.3
@@ -80,14 +79,17 @@ header
             text-transform: uppercase
             vertical-align: middle
             white-space: nowrap
+            text-decoration: none
         img
             position: relative
             top: 8px 
             padding: 0 9px 0 6px
     &__button
+        position: relative
         grid-area: bu
-        margin-top: 20px
-        margin-left: 28px
+        top: 25%
+        margin-left: 20px
+        
         .header-btn
             width: 180px
             height: 45px
