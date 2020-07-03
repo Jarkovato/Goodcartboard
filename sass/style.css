@@ -1037,11 +1037,6 @@ section {
   .header__contacts img {
     display: none;
   }
-  .header__button {
-    margin: 0 auto;
-    margin-top: 15px;
-    padding: 0;
-  }
   .header__button .header-btn {
     width: 30px;
     height: 30px;
