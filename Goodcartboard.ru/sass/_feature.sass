@@ -1,0 +1,53 @@
+@import 'mixins'
+.features
+    padding-bottom: 50px
+.feature__wrapper
+    background-color: #f4f4f4
+.feature
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(3, (min-height: 132px))
+    grid-gap: 30px
+    min-height: 515px
+    &__title
+        text-align: center
+        margin-top: 45px
+        background-color: #f4f4f4
+        big
+            display: block   
+            color: #ff9d00
+            font-weight: 900
+            font-size: 36px
+        span
+            display: block
+            margin-top: 5px
+            font-size: 16px
+            font-weight: 400
+    &__content
+        background-color: #fff
+        position: relative
+        img 
+            position: absolute
+            float: left
+            top: 50%
+            transform: translateY(-50%)
+        p
+            text-align: center
+            margin-top: 10px
+            font-size: 16px
+            font-weight: 900
+            @include text-color
+            &:hover
+                color: #fff
+        span
+            display: block
+            font-size: 16px
+            font-weight: 300
+            padding: 10px 0px 10px 60px
+    &__content:hover
+        background-color: #000
+        p
+            color: #fff 
+        span
+            color: #fff
+

@@ -1,0 +1,71 @@
+@import 'mixins'
+.production-content
+    display: grid
+    grid-template-columns: 57% 42%
+    grid-auto-rows: 1fr
+.production-slider_top
+    margin-top: 85px
+    img
+        width: 535px
+        height: 380px
+.production-slider_bottom
+    width: 87%
+    margin-top: 15px
+    margin-left: 35px
+    img
+        height: 78px
+        width: 150px
+        filter: grayscale(100%)
+    img:hover
+        filter: none
+        cursor: pointer
+.making-arrow-prev 
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 22px
+    height: 78px
+    left: -35px
+    background: url('../img/arrows/left-arrow.png') center no-repeat
+    border: none
+.making-arrow-prev:hover 
+    background: url('../img/arrows/left-arrow-white.png') center no-repeat
+
+.making-arrow-next 
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 22px
+    height: 78px
+    right: -35px
+    background: url('../img/arrows/right-arrow.png') center no-repeat
+    border: none
+.making-arrow-next:hover 
+    background: url('../img/arrows/right-arrow-white.png') center no-repeat
+
+
+.production-info
+    &__title
+        @include btn-color
+        width: 100%
+        margin-top: 111px
+        font-size: 28px
+        color: #fff
+        line-height: 22px
+        height: 54px
+        padding-top: 15px
+        padding-left: 20px
+        font-weight: 300
+        line-height: 22px
+    &__text
+        @inclue text-color
+        font-size: 16px
+        line-height: 24px
+        font-weight: 300
+        padding-top: 15px
+        padding-left: 23px
+        p
+            display: block
+            margin-top: 10px
+
+
